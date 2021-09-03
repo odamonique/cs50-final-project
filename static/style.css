@@ -1,0 +1,13 @@
+.navbar-brand{
+    font-size: xxx-large;
+    padding: 4rem;
+    color:salmon;
+}
+p.a{
+  color: aquamarine;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
