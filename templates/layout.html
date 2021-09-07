@@ -13,24 +13,28 @@
     <title>{% block head %}{% endblock %}</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Favourits</a></li>
+        </ul>
+      </div>
+    </nav>
     <nav class="navbar">
-      <a class="navbar-brand" href="/">Primony</a>
-      <ul class="navbar-nav ml-auto mt-2">
-        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
-        <li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
-      </ul>
+      <a class="navbar-brand mx-auto" href="/">Primony</a>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Quote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">chocolate</a>
+            <a class="nav-link" href="#">Chocolate</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Decorations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricelist">Price List</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,7 +49,7 @@
       </div>
     </nav>
 
-    <main>
+    <main class="container p-5">
       {% block main %}{% endblock %}
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

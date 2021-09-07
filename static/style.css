@@ -3,11 +3,11 @@
     padding: 4rem;
     color:salmon;
 }
-p.a{
-  color: aquamarine;
-}
 
 .dropdown:hover .dropdown-menu{
   display: block;
 }
 
+.center{
+  text-align: center;
+}
