@@ -12,3 +12,24 @@
   text-align: center;
 }
 
+.img-chocolates{
+  width: 304px;
+  height: 236px;
+  overflow: hidden;
+}
+
+i{
+  font-size: 24px;
+}
+
+.table-chocolate{
+  background-color: peachpuff;
+}
+
+.table-flower{
+  background-color: lavender;
+}
+
+.table-gift{
+  background-color: lightcyan;
+}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+  Home
+{% endblock %}
+
+{% block main %}
+<div class="text-center">
+  <img src="{{url_for('static', filename='forminha-girassol.jpg')}}" alt="sunflower shape" class="img-thumbnail img-chocolates"/>
+</div>
+<div class="text-center mt-5">
+  <img src="{{url_for('static', filename='forminha-camafeu.jpg')}}" alt="camafeu shape" class="img-thumbnail img-chocolates"/>
+</div>
+<div class="text-center mt-5">
+  <img src="{{url_for('static', filename='forminha-rosa.jpg')}}" alt="pink coloured" class="img-thumbnail img-chocolates"/>
+</div>
+{% endblock %}

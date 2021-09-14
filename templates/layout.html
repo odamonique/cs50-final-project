@@ -10,14 +10,16 @@
 
     <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
     <title>{% block head %}{% endblock %}</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Favourits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class='far fa-user-circle'></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class='far fa-star'></i></a></li>
         </ul>
       </div>
     </nav>
@@ -31,25 +33,18 @@
             <a class="nav-link" href="/chocolates">Chocolate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Decorations</a>
+            <a class="nav-link" href="/decorations">Decorations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/pricelist">Price List</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              gifts
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Valentine's Day</a>
-              <a class="dropdown-item" href="#">Easter Eggs</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/gifts">Gifts</a>
           </li>
         </ul>
       </div>
     </nav>
-
-    <main class="container p-5">
+    <main class="container mt-5">
       {% block main %}{% endblock %}
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

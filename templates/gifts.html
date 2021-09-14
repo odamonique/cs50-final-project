@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+  Home
+{% endblock %}
+
+{% block main %}
+<div class="text-center">
+    <img src="{{url_for('static', filename='gift-3.jpg')}}" alt="chocolate egg with filling" class="img-thumbnail img-chocolates"/>
+  </div>
+<div class="text-center mt-5">
+  <img src="{{url_for('static', filename='gift-2.jpg')}}" alt=" 2 wrapped chocolate eggs" class="img-thumbnail img-chocolates"/>
+</div>
+<div class="text-center mt-5">
+  <img src="{{url_for('static', filename='gifts-1.jpg')}}" alt="many wrapped chocolate eggs" class="img-thumbnail img-chocolates"/>
+</div>
+{% endblock %}

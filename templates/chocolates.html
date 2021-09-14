@@ -5,5 +5,13 @@
 {% endblock %}
 
 {% block main %}
-  <img src="{{url_for('static', filename='chocolate-1.jpg')}}" class="image-circle"/>
+<div class="text-center">
+  <img src="{{url_for('static', filename='chocolate-2.jpg')}}" alt="mini dark chocolates" class="img-thumbnail img-chocolates"/>
+</div>
+<div class="text-center mt-5">
+  <img src="{{url_for('static', filename='chocolate-1.jpg')}}" alt="mini white chocolates" class="img-thumbnail img-chocolates"/>
+</div>
+<div class="text-center mt-5">
+  <img src="{{url_for('static', filename='chocolate-3.jpg')}}" alt="mini cherry chocolates" class="img-thumbnail img-chocolates"/>
+</div>
 {% endblock %}

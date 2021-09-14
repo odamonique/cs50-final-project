@@ -13,3 +13,11 @@ def pricelist():
 @app.route("/chocolates")
 def chocolates():
     return render_template("/chocolates.html")
+
+@app.route("/decorations")
+def decorations():
+    return render_template("/decorations.html")
+
+@app.route("/gifts")
+def gifts():
+    return render_template("/gifts.html")
