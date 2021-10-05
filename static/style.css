@@ -33,3 +33,16 @@ i{
 .table-gift{
   background-color: lightcyan;
 }
+
+.clickable-icon{
+  cursor: pointer;
+}
+
+.i_images{
+  margin: 15px;
+  color: rgba(0,0,0,.5);
+}
+
+i:hover{
+  color: black;
+}
